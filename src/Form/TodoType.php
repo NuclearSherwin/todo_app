@@ -17,6 +17,7 @@ class TodoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+            ->add('tag')
             ->add('name', TextType::class)
             ->add('description', TextType::class)
             ->add('category', TextType::class)
